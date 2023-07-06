@@ -1,12 +1,21 @@
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'RIDIBatang';
+}
+
 #menu-bar {
     background-color: color-mix(in srgb, var(--bg) 80%, rgba(0, 0, 0, 0));
     backdrop-filter: blur(4px);
     view-transition-name: mdbook-menu-bar;
 }
-#page-wrapper {
 
-}
-.page > .content {
+.page>.content {
     view-transition-name: mdbook-page;
 }
 
@@ -26,12 +35,12 @@
 
 
 ::view-transition-old(mdbook-page) {
-  animation-name: slideOut;
-  animation-duration: 0.3s;
+    animation-name: slideOut;
+    animation-duration: 0.3s;
 }
 
 ::view-transition-new(mdbook-page) {
-  animation-name: slideIn;
-  animation-duration: 0.3s;
+    animation-name: slideIn;
+    animation-duration: 0.3s;
 
 }
